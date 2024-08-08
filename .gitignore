@@ -35,6 +35,9 @@ bld/
 
 /WomenSafety/google-services.json
 WomenSafety/google-services.json
+./WomenSafety/google-service.json
+google-service.json
+.env
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
