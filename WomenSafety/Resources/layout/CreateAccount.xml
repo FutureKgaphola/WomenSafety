@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#F5F5F5"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/safeimage"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/safe"
+                         />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HI, "
+                    android:layout_toRightOf="@+id/safeimage"
+                    android:id="@+id/hitext"
+                    android:textColor="#003c69"
+                    android:textSize="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Care to create an account with us and enjoy your safety."
+                    android:id="@+id/womanName"
+                    android:layout_toRightOf="@+id/hitext"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="25dp"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:id="@+id/bootom"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:background="@drawable/card_view">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your personal details"
+                            android:textStyle="bold"
+                            android:textSize="17dp"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                            android:id="@+id/reset"
+                            android:padding="4dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_margin="5dp"
+                            android:textColor="?android:attr/colorAccent"/>
+
+                    </RelativeLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:textColorHint="@android:color/black"
+                        android:id="@+id/textInputLayout2"
+                
+                    >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:id="@+id/username"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@android:color/transparent"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/black"
+                            android:drawableLeft="@drawable/mail_20px"
+                            android:drawableTint="@android:color/black"
+                            android:hint="Email address"
+                            android:textSize="15sp"
+                        />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:passwordToggleEnabled="true"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:textColorHint="@android:color/black"
+                        tools:ignore="XmlNamespace"
+                
+                     >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:id="@+id/edtpassword"
+                            android:gravity="center_vertical"
+                            android:password="true"
+                            android:background="@android:color/transparent"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/black"
+                            android:hint="Password"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="15sp"
+                        />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:textColorHint="@android:color/black"
+                       
+                
+                    >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:id="@+id/MyName"
+                            android:maxLength="16"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@android:color/transparent"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/black"
+                            android:drawableLeft="@drawable/face_20px"
+                            android:drawableTint="@android:color/black"
+                            android:hint="Your Name"
+                            android:textSize="15sp"
+                        />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="3dp"
+                            android:textColor="@android:color/darker_gray"
+                            android:text="⚠️Only up to 16 charaters are allowed here.(1-16 characters requred)"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your close associates' details"
+                            android:textStyle="bold"
+                            android:textSize="17dp"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                            android:padding="4dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorAccent"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/cardviewfriends"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1st Associates"
+                                android:textStyle="bold"
+                                android:textSize="17dp"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                                android:padding="4dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_margin="5dp"
+                                android:textColor="@color/colorAccent"/>
+                        </RelativeLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:textColorHint="@android:color/black"
+                         >
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:id="@+id/frstFriendPhone"
+                                android:background="@android:color/transparent"
+                                android:textColor="@android:color/black"
+                                android:textColorHint="@android:color/black"
+                                android:drawableLeft="@drawable/call_20px"
+                                android:drawableTint="@android:color/black"
+                                android:hint="Phone"
+                                android:textSize="15sp"
+                            />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:passwordToggleEnabled="true"
+                            app:boxCornerRadiusBottomEnd="8dp"
+                            app:boxCornerRadiusBottomStart="8dp"
+                            app:boxCornerRadiusTopEnd="8dp"
+                            app:boxCornerRadiusTopStart="8dp"
+                            android:background="@android:color/white"
+                            tools:ignore="XmlNamespace"
+                             >
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:maxLength="16"
+                                android:id="@+id/frstFriendName"
+                                android:drawableLeft="@drawable/face_20px"
+                                android:hint="Your Associate's Name (1-16 characters requred)"
+                                android:textSize="15sp"
+                             />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="3dp"
+                            android:textColor="@android:color/darker_gray"
+                            android:text="⚠️Only up to 16 charaters are allowed here.(1-16 characters requred)"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/cardviewfriends"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2nd Associates"
+                                android:textStyle="bold"
+                                android:textSize="17dp"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                                android:padding="4dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_margin="5dp"
+                                android:textColor="@color/colorAccent"/>
+                        </RelativeLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:textColorHint="@android:color/black"
+                         >
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:background="@android:color/transparent"
+                                android:textColor="@android:color/black"
+                                android:textColorHint="@android:color/black"
+                                android:drawableLeft="@drawable/call_20px"
+                                android:drawableTint="@android:color/black"
+                                android:hint="Phone"
+                                android:id="@+id/secondFriendPhone"
+                                android:textSize="15sp"
+                            />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:passwordToggleEnabled="true"
+                            app:boxCornerRadiusBottomEnd="8dp"
+                            app:boxCornerRadiusBottomStart="8dp"
+                            app:boxCornerRadiusTopEnd="8dp"
+                            app:boxCornerRadiusTopStart="8dp"
+                            android:background="@android:color/white"
+                            tools:ignore="XmlNamespace"
+                             >
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:maxLength="16"
+                                android:id="@+id/secondFriendName"
+                                android:drawableLeft="@drawable/face_20px"
+                                android:hint="Your Associate's Name (1-16 characters requred)"
+                                android:textSize="15sp"
+                             />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="3dp"
+                            android:textColor="@android:color/darker_gray"
+                            android:text="⚠️Only up to 16 charaters are allowed here.(1-16 characters requred)"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/cardviewfriends"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3rd Associates"
+                                android:textStyle="bold"
+                                android:textSize="17dp"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                                android:padding="4dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_margin="5dp"
+                                android:textColor="@color/colorAccent"/>
+                        </RelativeLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:textColorHint="@android:color/black"
+                         >
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:id="@+id/ThirdFriendPhone"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:background="@android:color/transparent"
+                                android:textColor="@android:color/black"
+                                android:textColorHint="@android:color/black"
+                                android:drawableLeft="@drawable/call_20px"
+                                android:drawableTint="@android:color/black"
+                                android:hint="Phone"
+                                android:textSize="15sp"
+                            />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:passwordToggleEnabled="true"
+                            app:boxCornerRadiusBottomEnd="8dp"
+                            app:boxCornerRadiusBottomStart="8dp"
+                            app:boxCornerRadiusTopEnd="8dp"
+                            app:boxCornerRadiusTopStart="8dp"
+                            android:background="@android:color/white"
+                            tools:ignore="XmlNamespace"
+                             >
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:maxLength="16"
+                                android:id="@+id/ThirdFriendName"
+                                android:drawableLeft="@drawable/face_20px"
+                                android:hint="Your Associate's Name (1-16 characters requred)"
+                                android:textSize="15sp"
+                             />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="3dp"
+                            android:textColor="@android:color/darker_gray"
+                            android:text="⚠️Only up to 16 charaters are allowed here.(1-16 characters requred)"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="100"
+                        android:padding="3dp"
+                        android:orientation="horizontal"
+                        tools:ignore="MissingDimension,XmlNamespace">
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Signup"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                            android:id="@+id/procced"
+                            android:textColor="@android:color/white"
+                         />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:id="@+id/progBar"
+                    android:visibility="gone"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_margin="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="52dp"
+                android:id="@+id/emergencyImg"
+                android:scaleType="centerCrop"
+                android:layout_margin="2dp"
+                android:src="@mipmap/security_system"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/emergencyImg"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery date : "
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="07 May 2024 08:55pm"
+                        android:id="@+id/HistoryDate"
+                        android:textColor="@android:color/black"/>
+                </LinearLayout>
+
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coordinates : "
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="lat:00.0000000"
+                        android:visibility="gone"
+                        android:id="@+id/HistoryLat"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lon:00.0000000"
+                        android:visibility="gone"
+                        android:id="@+id/HistoryLon"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00.0000000"
+                        android:id="@+id/HistoryCombined"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="@android:color/black"/>
+                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Report as false alarm? "/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:textSize="8dp"
+                        android:text="False alarm"
+                        android:id="@+id/falseAlarmEvent"
+                        
+                        />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="true"
+                        android:id="@+id/DeleteAlarm"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:soundEffectsEnabled="true"
+                        android:src="@drawable/delete_forever_24px"
+                        android:layout_gravity="center_vertical"/>
+                 </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WomenSafety</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Profile</string>
+    <string name="title_notifications">Exit</string>
+	<string name="channel_name">Local Notifications</string>
+	<string name="disableFeature">Disable safety Feature</string>
+	<string name="enableFeature">Enable safety Feature</string>
+	<string name="captionText">Hi there Nice to See you. Care to Stay protected everywhere you are going. Enable The safety feature below. When you feel unsafe kindly shake your device we will handle the rest</string>
+	<string name="channel_description">The count from MainActivity.</string>
+	<string name="google_error">There is a problem with Google Play Services on this device(not installed or not detected)</string>
+</resources>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "362742093559",
+    "firebase_url": "https://metrorail-5b955-default-rtdb.firebaseio.com",
+    "project_id": "metrorail-5b955",
+    "storage_bucket": "metrorail-5b955.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362742093559:android:b781724ca658672b73e5f2",
+        "android_client_info": {
+          "package_name": "com.companyname.metrorail_system"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcZAsOAFqlORxMfCNEuXpXlw0WNwI0nno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

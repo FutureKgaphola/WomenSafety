@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@mipmap/safe"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32px"
+            android:fontFamily="@fonts/Poppins-Medium"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/black"
+            android:text="@string/captionText"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enableFeature"
+            android:id="@+id/EnableBtn"
+            app:icon="@drawable/safety_check_24px"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="XmlNamespace" 
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disableFeature"
+            android:id="@+id/DisableBtn"
+            app:icon="@drawable/safety_check_off_24px"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="XmlNamespace" 
+            />
+
+    </LinearLayout>
+
+</FrameLayout>
